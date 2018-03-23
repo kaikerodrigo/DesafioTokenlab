@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#1f1f20</color>
+    <color name="fundo">#424751</color>
+    <color name="colorSloganTokenlab">#36a4fc</color>
+    <color name="colorAccent">#40afff</color>
+    <color name="colorBarraMenu">#2b303f</color>
+    <color name="colorText">#ffffff</color>
+</resources>

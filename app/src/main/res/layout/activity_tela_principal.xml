@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context="kdo.desafiotokenlab.visao.TelaPrincipal">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDestaque"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listViewDestaqueGame"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutListaDeGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ListView
+            android:id="@+id/listViewGames"
+            android:layout_width="match_parent"
+            android:layout_height="465dp"></ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageViewAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/avatar1" />
+
+        <TextView
+            android:id="@+id/txtNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewAvatar"
+            android:text="@string/name"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtRespostaNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@+id/txtNameUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+
+
+        <TextView
+            android:id="@+id/txtLastNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNameUser"
+            android:text="@string/lastName"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtRespostaLastNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtLastNameUser"
+            android:layout_alignStart="@+id/txtRespostaNameUser"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_toEndOf="@+id/txtLastNameUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtEmailUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLastNameUser"
+            android:text="@string/email"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtRespostaEmailUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtEmailUser"
+            android:layout_alignStart="@+id/txtRespostaLastNameUser"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_toEndOf="@+id/txtEmailUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtBrithdayUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmailUser"
+            android:text="@string/brithday"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtRespostaBrithdayUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtBrithdayUser"
+            android:layout_alignStart="@+id/txtRespostaNameUser"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_toEndOf="@+id/txtBrithdayUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtAddressUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBrithdayUser"
+            android:text="@string/address"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtRespostaAddressUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtAddressUser"
+            android:layout_alignStart="@+id/txtRespostaNameUser"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_toEndOf="@+id/txtAddressUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtCountryUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAddressUser"
+            android:text="@string/country"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtRespostaCountryUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCountryUser"
+            android:layout_alignStart="@+id/txtRespostaNameUser"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_toEndOf="@+id/txtCountryUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtCityUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCountryUser"
+            android:text="@string/city"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtRespostaCityUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCityUser"
+            android:layout_alignStart="@+id/txtRespostaNameUser"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_toEndOf="@+id/txtCityUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txtTokenUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/token"
+            android:textColor="@color/colorText"
+            android:layout_below="@id/txtCityUser"/>
+
+        <TextView
+            android:id="@+id/txtRespostaTokenUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewAvatar"
+            android:layout_alignBaseline="@+id/txtTokenUser"
+            android:layout_toEndOf="@+id/txtTokenUser"
+            android:layout_alignStart="@+id/txtRespostaNameUser"
+            android:text=""
+            android:textColor="@color/colorText" />
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBarraMenu"
+        app:itemIconTint="@color/colorText"
+        app:itemTextColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

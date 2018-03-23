@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgGame"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/deletefileicon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imgGame"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNameGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/colorText"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtDataGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textColor="@color/colorText"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtPlataformsGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plataforms"
+            android:textColor="@color/colorText"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+</RelativeLayout>

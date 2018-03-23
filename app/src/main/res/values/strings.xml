@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Desafio Tokenlab</string>
+    <string name="title_destaque">Destaque</string>
+    <string name="title_lista_de_jogos">Lista</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="message_erro_list_game_vazia">No momento não há nenhum jogo em sua \n
+    lista.</string>
+    <string name="message_erro_internet">É necessário conexão com há \n
+    internet para executar o aplicativo.</string>
+
+    <string name="name">Nome</string>
+    <string name="lastName">Sobrenome</string>
+    <string name="brithday">Anivesário</string>
+    <string name="email">E-mail</string>
+    <string name="address">Endereço</string>
+    <string name="city">Cidade</string>
+    <string name="country">País</string>
+    <string name="token">Token</string>
+    <string name="date_release">Data de lançamento</string>
+    <string name="platforms">Plataforma(s)</string>
+    <string name="title_activity_tela_video">TelaVideo</string>
+</resources>
